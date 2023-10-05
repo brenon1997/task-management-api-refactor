@@ -1,7 +1,7 @@
 module.exports = app => {
 
-  const { Project } = app.app.models.Project
-  const { Task } = app.app.models.Task
+  const { Project } = app.src.app.models.Project;
+  const { Task } = app.src.app.models.Task;
 
   // create a new project
   const createProject = async (req, res) => {

@@ -1,16 +1,17 @@
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const { jwt_key } = require('../../.env')
+const dotenv = require('dotenv');
+dotenv.config()
 const crypto = require('crypto')
 const mailer = require('../../modules/mailer')
 
 module.exports = app => {
 
-  const { User } = app.app.models.User
+  const { User } = app.src.app.models.User;
 
   // generate token
   const generateToken = (params = {}) => {
-    return jwt.sign(params, jwt_key, {
+    return jwt.sign(params, process.env.JWT_KEY, {
       expiresIn: 86400
     })
   }
