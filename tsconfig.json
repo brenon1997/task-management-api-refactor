@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@app/*": [
+        "src/*"
+      ]
+    },
+    "baseUrl": "src"
+  },
+  "types": [
+    "mongoose"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}
