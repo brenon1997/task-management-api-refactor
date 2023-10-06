@@ -2,7 +2,7 @@
   "name": "task-management-api-refactor",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "index.js",
   "scripts": {
     "start:dev": "nodemon --watch \"src/\" --exec \"ts-node -r tsconfig-paths/register src/index.ts\" -e ts"
   },
